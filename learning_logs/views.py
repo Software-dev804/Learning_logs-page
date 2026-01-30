@@ -46,10 +46,28 @@ def new_entry(request, topic_id):
         '''post data submitted: process the data'''
         form = EntryForm(request.POST)
         if form.is_valid():
-            new_entry = form(commit=False)
+            new_entry = form.save(commit=False)
             new_entry.topic = topic
             new_entry.save()
             return redirect('learning_logs:topic', topic_id)
         
     context = {'form':form, 'topic':topic}
     return render(request, 'learning_logs/new_entry.html', context)
+
+def edit_entry(request, entry_id):
+    '''edit the existing entries'''
+    entry = Entry.objects.get(id = entry_id)
+    topic = entry.topic
+
+    if request.method != 'POST':
+        'No data  submitted: pre-fill the form'
+        form = EntryForm(instance=entry)
+    else:
+        '''post data submitted: process the data'''
+        form = EntryForm(instance=entry, data=request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('learning_logs:topic', topic.id)
+    
+    context = {'form':form, 'entry':entry, 'topic':topic}
+    return render(request, 'learning_logs/edit_entry.html', context)
