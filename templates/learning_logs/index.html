@@ -18,17 +18,43 @@
         <p class="text-light">The platform provide several Features:</p>
     </div>
     <div class="row container-fluid bg-dark my-2">
-        <div class="col-md-3 shadow-sm bg-white-70 container p-4 m-3">
+        <div class="col-md-3 shadow-lg bg-white-70 container p-4 m-3">
             <h4 class="text-warning text-center">Control</h4>
             <p class="text-white-50">Users will be able to edit their entries personally.A user can do the editing unlimited times without interferance.This is advantagers for doing correction during reviews.</p>
         </div>
-        <div class="col-md-3 shadow-sm bg-white-70 container p-4 m-3">
+        <div class="col-md-3 shadow-lg bg-white-70 container p-4 m-3">
             <h4 class="text-warning text-center">Privacy</h4>
             <p class="text-white-50">Each user is able to own his/her entities and each one of them will only see their entries.User will edit his/her own entries and not even the developer will view the work.</p>
         </div>
-        <div class="col-md-3 shadow-sm bg-white-70 container p-4 m-3">
+        <div class="col-md-3 shadow-lg bg-white-70 container p-4 m-3">
             <h4 class="text-warning text-center">Integrity</h4>
             <p class="text-white-50">The site ensures that each users information remain how it is from the time of registering, loging in, creating their topics and entries and throught your journey in the site.</p>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark my-2 shadow-lg p-4">
+        <h3 class="text-warning py-2">How does it work?</h3>
+        <div class="d-flex justify-content-between flex-sm-fill flex-sm-wrap flex-lg-nowrap">
+        <div class="card mb-3 me-3" style="background-color:  rgb(140, 79, 190);">
+            <div class="card-body">
+                <h4 class="card-title"><span class="badge rounded-pill bg-success">1</span> Start:</h4>
+                <hr>
+                <p class="card-text text-body ms-4 p-3">Create an account in the site to enable you track your learning smoothly with little effort. Click <a class="card-link text-warning" href="{% url 'users:register' %}">register</a> to create an account and<a href="{% url 'users:login' %}"" class="card-link text-warning">log_in</a> into your account to get started.</p>
+            </div>
+        </div>
+        <div class="card mb-3 me-3" style="background-color: rgb(104, 71, 134);">
+            <div class="card-body">
+                <h4 class="card-title"><span class="badge rounded-pill bg-success">2</span> Create topics:</h4>
+                <hr>
+                <p class="card-text ms-4 p-3 text-body">After creating an account, go ahead and create as many topics as you can in your personal account, add entries to the topic seemlessly as you learn them. How is it!!</p>
+            </div>
+        </div>
+        <div class="card mb-3 me-3" style="background-color: rgb(88, 7, 155);">
+            <div class="card-body">
+                <h4 class="card-title"><span class="badge rounded-pill bg-success">3</span> Track your progress:</h4>
+                <hr>
+                <p class="card-text ms-4 p-3 text-body">Create your logs to your liking to enable you keep a straight forward learning and allow you review,revisit and reference your scripts at any time.</p>
+            </div>
+        </div>
         </div>
     </div>
 </div>
