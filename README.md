@@ -31,7 +31,7 @@ Follow these steps to set up Learning Log locally.
 
 1. **Clone the repository** (or download the source code):
    ```bash
-   git clone https://github.com/yourusername/learning-log.git
+   git clone git@github.com:Software-dev804/Learning_logs-page.git
    cd learning-log
    ```
 
