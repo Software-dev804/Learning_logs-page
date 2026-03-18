@@ -33,37 +33,39 @@ Follow these steps to set up Learning Log locally.
    ```bash
    git clone git@github.com:Software-dev804/Learning_logs-page.git
    cd learning-log
-   #for HTTPS clone use:
+   ```
+   **For HTTPS clone use:**
+   ```bash
    git clone https://github.com/Software-dev804/Learning_logs-page.git
    ```
 
-2. **Create and activate a virtual environment** (recommended):
+3. **Create and activate a virtual environment** (recommended):
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. **Install dependencies**:
+4. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Apply database migrations**:
+5. **Apply database migrations**:
    ```bash
    python manage.py migrate
    ```
 
-5. **Create a superuser** (to access the admin panel):
+6. **Create a superuser** (to access the admin panel):
    ```bash
    python manage.py createsuperuser
    ```
 
-6. **Run the development server**:
+7. **Run the development server**:
    ```bash
    python manage.py runserver
    ```
 
-7. **Open your browser** and go to `http://127.0.0.1:8000` to start using Learning Log.
+8. **Open your browser** and go to `http://127.0.0.1:8000` to start using Learning Log.
 
 ## Usage
 
