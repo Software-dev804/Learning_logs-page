@@ -33,6 +33,8 @@ Follow these steps to set up Learning Log locally.
    ```bash
    git clone git@github.com:Software-dev804/Learning_logs-page.git
    cd learning-log
+   #for HTTPS clone use:
+   git clone https://github.com/Software-dev804/Learning_logs-page.git
    ```
 
 2. **Create and activate a virtual environment** (recommended):
