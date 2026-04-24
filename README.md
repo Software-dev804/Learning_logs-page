@@ -92,11 +92,4 @@ Please ensure your code follows the existing style and includes appropriate test
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Inspired by the "Learning Log" project from the book *Python Crash Course* by Eric Matthes.
-- Built with Django and Bootstrap.
-
----
-
 **Happy Learning!** 📚
